@@ -5,15 +5,26 @@ This repository contains **Playwright automation tests** for the Snipe-IT demo a
 ---
 
 ## Project Structure
-laywrightTests/
-├─ Pages/ # Page Object Models (POM)
-├─ TestData/ # Test data and constants
-├─ Tests/ # NUnit test classes
-├─ bin/ # Build output (ignored in Git)
-├─ obj/ # Build files (ignored in Git)
-├─ PlaywrightTests.csproj # Project file
-├─ .gitignore # Git ignore rules
-
+PlaywrightTests/             # Root folder of the project
+├─ Pages/                    # Page Object Model (POM) classes
+│   ├─ LoginPage.cs
+│   ├─ ListPage.cs
+│   └─ HistoryPage.cs
+│
+├─ TestData/                 # Constants and test data
+│   └─ TestData.cs
+│
+├─ Tests/                    # NUnit test classes
+│   ├─ LoginTest.cs
+│   ├─ HistoryTest.cs
+│   └─ AssetTest.cs
+│
+├─ Utils/                    # Helper classes (e.g., screenshot utils)
+│   └─ ScreenshotHelper.cs
+│
+├─ .gitignore                # To exclude unnecessary files/folders
+├─ PlaywrightTests.csproj     # Project file
+└─ README.md                 # Project description and instructions
 
 
 
